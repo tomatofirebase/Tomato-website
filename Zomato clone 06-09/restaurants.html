@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/restaurants.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width: 685px)" href="css/index-p.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script type="module" src="gettingresturants.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />  
+   
+    <link rel="stylesheet" href="css/footer2.css">
+    <title>Restaurants</title>
+    
+    <style>
+        
+        .dataholder {
+            padding: 0px;
+            margin: 25px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            height: 360px;
+            width: 303px;
+            background-color: rgb(226, 218, 208,0.5);
+            box-shadow: inset 5px 5px 15px rgb(151 139 139 / 14%), inset -5px -5px 15px rgb(104 126 126 / 15%), 5px 5px 15px rgb(151 139 139 / 12%), -5px -5px 15px rgb(104 126 126 / 12%);
+        }
+        #rest{
+            /* background-color: #d9b584; */
+        }
+        .dataholder div{
+            align-items: center;
+            margin-left: 0;
+        }
+        .dataholder:hover {
+            /* transform: translate(5px, 20px);  */
+            transform: scale(1.05);
+            box-shadow: -30px 30px 50px rgba(0, 0, 0, 0.295);
+            transition:all ease 0.5s;
+            /* height: 300px; */
+        }
+        .imgbox {
+            height: 200px;
+            border-radius: 20px;
+            width: 300px;
+        }
+        .content{
+            padding-left: 22px;
+        }
+
+        .title h2 {
+            font-size: 37px;
+            font-family: 'Dosis', sans-serif;
+        }
+
+        .container {
+            margin-top: 100px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .dataholder div{
+            align-items: center;
+        }
+    
+    </style>
+</head>
+
+<body>
+
+    <div class="top">
+        <nav id="navbar">
+            <!-- <div id="logo">
+                <img src="img/logomain.jpg" alt="FindMyBus">
+            </div> -->
+            <ul>
+                <li><a href="index.html"> Home</a></li>
+                <!-- <li><a href="index.html"> Login</a></li> -->
+                <li><a href="restaurants.html"> <u> Restaurants </u></a></li>
+            <li><a href="Help.html">Help</a></li>
+            <li><a href="About.html">About Us</a></li>
+        </ul>
+    </nav>
+    <section id="rest">
+        <div class="rest">
+            
+            <img src=".//img/loc-logo.jpeg" alt="" id="loc">
+            <p> Dilshuknagar &nbsp; &nbsp;|</p>
+            <div id="search-bar">
+                <img src=".//img/search.png" alt="" id="search-img">
+                <input type="search" name="search" id="search">
+            </div>
+            
+        </div>
+        <div id="list" class="container">
+        </div>
+        
+    </section>
+    </div>
+    <footer class="site-footer">  
+        <div class="container">  
+         <div class="row">  
+          <div class="col-sm-12 col-md-6">  
+           <h6>About</h6>  
+           <p class="text-justify">Food Court is one of India’s great food companies and a leading foodservice distributor, partnering with approximately 300 restaurants and foodservice operators to help their businesses succeed.
+             With more than 1k employees and more than 10 locations, we provide our customers with a broad and innovative food offering from wide varieties of restaurants.</p>  
+          </div>  
+          <div class="col-6 col-md-3">  
+           <h6>Categories</h6>  
+           <ul class="footer-links ">  
+            <li><a href="#">Non-Vegetarian</a></li>  
+            <li><a href="#">Vegerarian</a></li>  
+            <li><a href="#">Chinese</a></li>  
+            <li><a href="#">Deserts</li>  
+            <li><a href="#">Soft Drinks</a></li>  
+            <li><a href="#">Pizzas</a></li>  
+           </ul>  
+          </div>  
+          <div class="col-6 col-md-3">  
+           <h6>Quick Links</h6>  
+           <ul class="footer-links">  
+            <li><a href="#">About Us</a></li>  
+            <li><a href="#">Contact Us</a></li>  
+            <li><a href="#">Contribute</a></li>  
+            <li><a href="#">Privacy Policy</a></li>  
+            <li><a href="#">Sitemap</a></li>  
+           </ul>  
+          </div>  
+         </div>  
+         <hr class="small">  
+        </div>  
+        <div class="container">  
+         <div class="row">  
+          <div class="col-md-8 col-sm-6 col-12">  
+           <p class="copyright-text">Copyright © 2020 All Rights Reserved by  
+            <a href="#"><span class="logo">Food Court.</span></a>  
+           </p>  
+          </div>  
+          <div class="col-md-4 col-sm-6 col-12">  
+           <ul class="social-icons">  
+            <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>  
+            <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>  
+            <li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>  
+            <li><a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a></li>  
+           </ul>  
+          </div>  
+         </div>  
+        </div>  
+       </footer>  
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>  
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>  
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
+        //import { getAuth, GoogleAuthProvider , signInWithPopup} from "https://www.gstatic.com/firebasejs/9.9.3/firebase-auth.js";
+        import { getFirestore, doc, getDoc, getDocs, setDoc, collection, addDoc, updateDoc, deleteDoc, deleteField } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-firestore.js"
+        // TODO: Add SDKs for Firebase products that you want to use
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyCwjYDAx5Zyt7wgqvtkdWQUYmY_kkDtcyI",
+            authDomain: "tomatofirebase-41666.firebaseapp.com",
+            projectId: "tomatofirebase-41666",
+            storageBucket: "tomatofirebase-41666.appspot.com",
+            messagingSenderId: "1062931681692",
+            appId: "1:1062931681692:web:540f838edad610bf66b859"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore();
+
+        const colRef = collection(db, 'restaurants')
+        const docSnap = await getDocs(colRef)
+        const listofrests = document.getElementById('list')
+
+        /* const docRef = doc(db,"users","5BrXmSuasx6uU5xKiVNg")
+             const docSnap = await getDoc(docRef)*/
+
+        docSnap.forEach(doc => {
+            listofrests.innerHTML += "<div class='dataholder'><div><img class='imgbox' src=" + doc.data().image + "></div><div class='content'><div class='title'><h2>" + doc.data().name + "</h2></div><div><p>Address: " + doc.data().address + "</p></div><div><p>" + doc.data().description + "</p></div><div><p>Rating :" + doc.data().rating + "/5</p></div></div></div>"});
+            
+        </script>
+
+
+</body>
+
+</html>
