@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Itim', cursive;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    background-color: rgb(75 38 29 / 77%);
+    z-index: 5;
+    width: 100%;
+} 
+
+/* logo */
+#logo{
+    width: 134px;
+}
+#navbar img{
+  
+    margin: 5px;
+    height: 50px;
+    width: 87%;
+    border-radius: 3px;
+}
+.google-btn{
+    position: absolute;
+    top: 50%;
+    width: 80%;
+    left: 10%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(96, 211, 219);
+    padding: 10px;
+    border-radius: 5px;
+   
+ }
+ .google-text{
+    font-size: 18px;
+    margin-left: 10px;
+    font-family:'Dosis', sans-serif;
+    font-weight: bolder;
+ }
+ .popup{
+    position: absolute;
+    width:20%;
+    height: 20%;
+    left: 20%;
+    top:10%;
+    border:2px solid white;
+    background-color: white;
+    border-radius: 10px;
+    display: block;
+ }
+ .popup .popup-title{
+    position:absolute;
+    top: 10%;
+    left:40%;
+    font-size: 30px;
+    font-family:  'Dosis', sans-serif;
+ }
+.icon{
+    position:absolute;
+    top: 2%;
+    left: 92%;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+}
+#navbar ul li{
+    list-style: none;
+
+}
+/* list items */
+#navbar ul li a{
+    color:rgb(218, 223, 230);
+    margin: 0px 5px;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 1.5rem;
+    display: block;
+}
+#navbar a:hover{
+    /* transition: 100ms; */
+    background-color: rgb(242, 244, 247);
+    color: rgb(4 27 83);
+    text-shadow: 4px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+/* Home section */
+#home{
+    height: 380px;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    padding: 0px 20px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background: url("../img/1st(1).jpg") no-repeat center center/cover ;
+    /* opacity: 0.8; */
+    height: 80%;
+    width: 100%;
+}
+
+#home div{
+    position: absolute;
+    top: 200px;
+
+}
+#home ul{
+    margin: 25px;
+}
+#home div h1{
+    font-size: 4.4rem;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+#home div h3{
+    font-size: 2.3rem;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    margin-top: 25px;
+}
+
+
+/* Services */
+#flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 350px;
+}
+#serv-cont{
+    background: #dbdada ;
+    align-items: center;
+    
+}
+#serv-cont button{
+    padding: 5px;
+    background-color: rgb(182, 73, 0);
+    color: white;
+    border-radius: 10px;
+    margin-left: 45%;
+    margin-bottom: 20px;
+    width: 10%;
+    height: 35px;
+    font-size: 1.2rem;
+    /* text-decoration: none; */
+}
+#serv-cont button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    
+}
+#serv-cont h1{
+    text-align: center;
+    font-size: 4rem;
+    padding-top: 20px;
+    /* font-family: 'Quicksand', sans-serif; */
+
+}
+.box{
+    position: relative;
+    /* border: 5px solid black; */
+    border-radius: 20px;
+    margin: 20px;
+    text-align: center;
+    background-color: rgb(226, 218, 208,0.5);
+    height: 69%;
+    width: 27%;
+    box-shadow: inset 5px 5px 15px rgba(151, 139, 139, 0.144),
+    inset -5px -5px 15px rgba(104, 126, 126, 0.151),
+    5px 5px 15px rgba(151, 139, 139, 0.123),
+    -5px -5px 15px rgba(104, 126, 126, 0.123);
+}
+.box::before{
+    content: '';
+    position: absolute;
+    inset: 5px;
+    border-radius: 15px;
+    transition:all ease 0.2s;
+}
+.box-head{
+    /* text-decoration:underline; */
+    font-family: 'Dosis', sans-serif;
+    font-weight: 1000;
+}
+.box:hover {
+    /* transform: translate(5px, 20px);  */
+    transform: scale(1.05);
+    box-shadow: -30px 30px 50px rgba(0, 0, 0, 0.295);
+    transition:all ease 0.5s;
+    /* height: 300px; */
+
+}
+
+
+.box img{
+    height: 75%;
+    border-radius: 20px;
+    margin-top: 0;
+    padding-top: 0 ;
+    width: 100%;
+    margin: 5px 0px;
+}
+
+/* E-Ticketing */
+#foot-up h1{
+    font-size: 3rem;
+    padding-top: 20px;
+}
+
+/* Footer  */
+.footer{
+    background-color: black;
+    color: white;
+    font-size: 1.1rem;
+    height: fit-content;
+    justify-content: center;
+}
+.footer p{
+    padding: 1vh;
+    display: block;
+    
+}
+.footer a{
+    color: white;
+    padding: 1vh;
+  
+}
